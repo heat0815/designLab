@@ -374,7 +374,7 @@ Main Header CSS
 	z-index: 2;
 	background: transparent !important;
 	padding-top: 20px;
-	padding-bottom: 20px;
+    padding-bottom: 20px;
 }
 .header-sticky.is-sticky {
 	position: fixed;
@@ -397,7 +397,7 @@ Main Header CSS
         span {
             color: $template_color;
             font: {
-                size: 35px;
+                size: 20px;
                 weight: 700;
             }
             text-transform: lowercase;
@@ -406,6 +406,7 @@ Main Header CSS
             color: #ffffff;
         }
     }
+
     .navbar-nav {
         .nav-item {
             padding-right: 15px;
