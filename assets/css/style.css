@@ -126,14 +126,23 @@ img {
 
 .btn-primary {
   color: #ffffff;
-  background-color: #ff2c57;
-  border-color: #ff2c57;
+  background-image: linear-gradient(to left, #ff2c90, #ff2c57);
+  border: none;
+}
+
+.view-work {
+  border: 1px solid #fff;
+}
+
+.view-work:hover {
+  background-image: linear-gradient(to left, #ff2c57, #ff2c90) !important;
 }
 
 .btn-primary:hover, .btn-primary:focus, .btn-primary.disabled:hover, .btn-primary.disabled:focus {
-  color: #ff2c57;
+  /* color: #ff2c57; */
   background-color: #ffffff;
-  border-color: #ff2c57;
+  background-image: linear-gradient(to left, #ff2c57, #ff2c90);
+  /* border-color: #ff2c57; */
 }
 
 .btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active {
@@ -483,7 +492,7 @@ Main Header CSS
   color: #000000;
 }
 .navbar-brand--icon {
-  fill: #ff2c57;
+  fill: url('#my-cool-gradient') #ff2c57;
   height: 40px;
   width: 40px;
 }
@@ -529,15 +538,15 @@ Main Banner CSS
 }
 
 .item-bg-one {
-  background-image: url('https://res.cloudinary.com/dci5hckoq/image/upload/v1557215620/aerial-shot-architecture-bird-s-eye-view-2084374_mewted.jpg');
+  background-image: url('https://res.cloudinary.com/dci5hckoq/image/upload/v1557299781/adult-chair-company-380769_elnjja.jpg');
 }
 
 .item-bg-two {
-  background-image: url('https://res.cloudinary.com/dci5hckoq/image/upload/v1557215620/aerial-shot-architecture-bird-s-eye-view-2084374_mewted.jpg');
+  background-image: url('https://res.cloudinary.com/dci5hckoq/image/upload/v1557299781/adult-chair-company-380769_elnjja.jpg');
 }
 
 .item-bg-three {
-  background-image: url('https://res.cloudinary.com/dci5hckoq/image/upload/v1557215620/aerial-shot-architecture-bird-s-eye-view-2084374_mewted.jpg');
+  background-image: url('https://res.cloudinary.com/dci5hckoq/image/upload/v1557299781/adult-chair-company-380769_elnjja.jpg');
 }
 
 .main-banner-text {
@@ -570,6 +579,7 @@ Main Banner CSS
   max-width: 730px;
   margin: auto;
   margin-bottom: 30px;
+  font-size: 18px;
 }
 
 .main-banner-text .btn:hover, .main-banner-text .btn:focus {
@@ -707,6 +717,9 @@ Welcome Area CSS
   overflow: hidden;
   -webkit-transition: .4s;
   transition: .4s;
+  /* border: 2px solid #ff2c57; */
+  height: 300px;
+  border-radius: 5px;
 }
 
 .single-box:hover {
@@ -1258,9 +1271,15 @@ Fun Facts Area CSS
 Team Area CSS
 ==============================
 */
+.owl-stage-outer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .our-team {
   text-align: center;
   position: relative;
+  height: 350px;
 }
 
 .our-team .team-content {
@@ -1719,6 +1738,10 @@ Work Area CSS
 Pricing Area CSS
 ==============================
 */
+.price-area {
+  background: transparent;
+}
+
 .pricingTable {
   padding: 30px 0;
   text-align: center;
